@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recall Rescue — 21-Day Sprint Sample Pack</title>
+<style>
+  @font-face {
+    font-family: "RR Sans";
+    src: url("file:///usr/share/fonts/pickle-hwp/NotoSansCJKkr-Regular.otf") format("opentype");
+    font-weight: 400;
+  }
+  @page {
+    size: A4;
+    margin: 13mm 12mm 15mm 12mm;
+    @bottom-left {
+      content: "Recall Rescue · nydds.github.io/recall-rescue · caremyshop.team@gmail.com";
+      font-family: "RR Sans"; font-size: 6.8pt; color: #64748b;
+    }
+    @bottom-right {
+      content: "Sample pack · page " counter(page) " of " counter(pages);
+      font-family: "RR Sans"; font-size: 6.8pt; color: #64748b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "RR Sans", sans-serif;
+    font-size: 8.5pt;
+    line-height: 1.4;
+    color: #1f2937;
+    margin: 0;
+  }
+  h1 { font-size: 16pt; margin: 0 0 1.6mm; color: #12263f; letter-spacing: -0.2pt; }
+  h2 { font-size: 10.2pt; margin: 4mm 0 1.6mm; color: #12263f; }
+  h3 { font-size: 9pt; margin: 0 0 1mm; color: #0a5e5d; }
+  p { margin: 0 0 1.4mm; }
+  .top {
+    background: #12263f; color: #fff; padding: 4mm 5.5mm 3.6mm; border-radius: 2.5mm;
+  }
+  .top .kicker { font-size: 7.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8fd9d7; margin-bottom: 1.5mm; }
+  .top h1 { color: #fff; }
+  .top p { color: #cbd5e1; margin: 0; font-size: 8.2pt; }
+  .fiction {
+    margin-top: 2mm; border: 0.4mm solid #f59e0b; background: #fffbeb;
+    border-radius: 1.6mm; padding: 2mm 2.8mm; font-size: 7.9pt;
+  }
+  .fiction b { color: #92400e; }
+  table { width: 100%; border-collapse: collapse; margin: 0.9mm 0 1.7mm; font-size: 7.9pt; }
+  th { background: #eef2f7; color: #12263f; text-align: left; padding: 1.3mm 1.6mm; border: 0.25mm solid #d7dfe9; font-size: 7.6pt; }
+  td { padding: 1.2mm 1.6mm; border: 0.25mm solid #d7dfe9; vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.total td { background: #e6f4f3; font-weight: bold; }
+  .msg { border: 0.25mm solid #d7dfe9; border-radius: 1.6mm; padding: 1.9mm 2.5mm; margin-bottom: 1.5mm; }
+  .msg .head { display: flex; justify-content: space-between; font-size: 7.4pt; color: #64748b; margin-bottom: 1mm; }
+  .msg .head b { color: #0a5e5d; font-size: 7.8pt; }
+  .cols { display: flex; gap: 3mm; }
+  .cols .col { flex: 1; }
+  .lang { font-size: 6.6pt; text-transform: uppercase; letter-spacing: 0.8pt; color: #64748b; margin-bottom: 0.5mm; }
+  .body { font-size: 7.85pt; }
+  .ko { font-size: 7.85pt; }
+  ul { margin: 0 0 1.4mm; padding-left: 4mm; }
+  li { margin-bottom: 0.6mm; }
+  .callout { background: #eef2ff; border: 0.25mm solid #c7d2fe; border-radius: 1.6mm; padding: 2mm 2.6mm; font-size: 7.9pt; margin: 1.5mm 0; }
+  .good { background: #ecfdf5; border-color: #10b981; }
+  a { color: #0a5e5d; text-decoration: none; }
+  .tiny { font-size: 7pt; color: #64748b; }
+  .page-break { break-before: page; }
+  .report-grid { display: flex; gap: 2mm; margin: 1.5mm 0 2mm; }
+  .metric { flex: 1; border: 0.25mm solid #d7dfe9; border-radius: 1.6mm; padding: 1.8mm 2mm; background: #f8fafc; }
+  .metric .k { font-size: 6.8pt; color: #64748b; }
+  .metric .v { font-size: 12.5pt; color: #12263f; font-weight: bold; line-height: 1.15; }
+  .footer-note { margin-top: 2mm; font-size: 7pt; color: #64748b; }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="kicker">Recall Rescue · 21-day reactivation sprint · sample pack</div>
+  <h1>What you receive, before you pay for it</h1>
+  <p>Three segments, six message samples (English and Korean), the tracker, the 21-day calendar, and a sample closing report — the same structure we deliver to a real practice.</p>
+</div>
+
+<div class="fiction">
+  <b>Fictional practice.</b> “Flushing Family Dental” is invented, and every count, message and result below is illustrative. A real kit never leaves a practice with patient data — we work from counts, not names.
+</div>
+
+<h2>1. The three segments (day 0)</h2>
+<p>Built from two numbers your practice management system already prints: active patients, and how many are overdue. Below: 1,200 active patients at 55% recall compliance, so 540 overdue (45%).</p>
+<table>
+  <tr><th style="width:11mm">Group</th><th style="width:38mm">Who is in it</th><th class="num" style="width:15mm">Patients</th><th>What they need to hear</th><th style="width:27mm">First touch</th></tr>
+  <tr><td><b>A</b></td><td>6–12 months overdue — missed one recall cycle</td><td class="num">186</td><td>“You’re due — here are two times.”</td><td>Text/email · day 1</td></tr>
+  <tr><td><b>B</b></td><td>12–24 months — two to four cycles missed</td><td class="num">214</td><td>“Something changed; we kept your chart open.”</td><td>Email/letter · day 3</td></tr>
+  <tr><td><b>C</b></td><td>24+ months — dormant, may need a new-patient visit</td><td class="num">140</td><td>“Come back for a full reset, not a cleaning.”</td><td>Letter, then call</td></tr>
+  <tr class="total"><td colspan="2">Total overdue</td><td class="num">540</td><td colspan="2">Every message carries an opt-out line</td></tr>
+</table>
+<p class="tiny">Cadence: 3 touches per group across 21 days. Touch 1 introduces the reason, touch 2 adds a specific opening, touch 3 is a final “this is the last one” with a direct booking line.</p>
+
+<h2>2. Message samples — English and Korean (touch 1)</h2>
+
+<div class="msg">
+  <div class="head"><b>Group A · 6–12 months overdue</b><span>Text message · 2 sentences</span></div>
+  <div class="cols">
+    <div class="col">
+      <div class="lang">English</div>
+      <div class="body">Hi [first name], this is [practice] on Northern Blvd — your cleaning is due and we have Tuesday 4:30pm or Saturday 10am open this week. Reply with a time and we’ll hold it. (Reply STOP to opt out.)</div>
+    </div>
+    <div class="col">
+      <div class="lang">한국어</div>
+      <div class="body ko">안녕하세요 [이름]님, 노던 블러바드 [치과명]입니다. 스케일링 시기가 되어 연락드렸어요. 이번 주 화요일 오후 4시 30분, 토요일 오전 10시 자리가 있습니다. 원하시는 시간으로 답장 주시면 잡아드릴게요. (수신거부는 ‘거부’로 답장)</div>
+    </div>
+  </div>
+</div>
+
+<div class="msg">
+  <div class="head"><b>Group B · 12–24 months overdue</b><span>Email · subject + 3 lines</span></div>
+  <div class="cols">
+    <div class="col">
+      <div class="lang">English</div>
+      <div class="body"><b>Subject:</b> [first name], your chart is still open at [practice]<br>
+      We haven’t seen you since [month, year]. Nothing is wrong with your file — it is just waiting. If your insurance resets in January, December is the cheapest month to use what is left. Two openings this week: reply and we’ll take one.</div>
+    </div>
+    <div class="col">
+      <div class="lang">한국어</div>
+      <div class="body ko"><b>제목:</b> [이름]님, [치과명]에 차트가 그대로 열려 있습니다<br>
+      [년] [월] 이후로 뵙지 못했어요. 기록은 그대로 있고 자리만 비어 있습니다. 보험이 1월에 리셋되신다면, 남은 금액을 쓰기엔 12월이 가장 유리합니다. 이번 주 두 자리만 남았습니다 — 답장 주시면 잡아드릴게요.</div>
+    </div>
+  </div>
+</div>
+
+<div class="msg">
+  <div class="head"><b>Group C · 24+ months overdue</b><span>Printed letter + follow-up call · 4 lines</span></div>
+  <div class="cols">
+    <div class="col">
+      <div class="lang">English</div>
+      <div class="body">Dear [first name], it has been over two years since your last visit. A lot changes in two years — so we book returning patients a full exam plus a cleaning, not just a cleaning. Reply to this letter or call [office number] and we will find a slot that fits your schedule. If you have moved on to another practice, tell us and we will close your chart properly.</div>
+    </div>
+    <div class="col">
+      <div class="lang">한국어</div>
+      <div class="body ko">[이름]님, 마지막 내원 이후 2년이 지났습니다. 2년이면 구강 상태도 많이 달라지기 때문에, 다시 오시는 분께는 스케일링만이 아니라 종합검진과 스케일링을 함께 예약해 드립니다. 이 편지에 답장하시거나 [오피스 번호]로 전화 주시면 시간을 맞춰 드리겠습니다. 다른 치과로 옮기셨다면 알려 주세요 — 차트를 정리해 두겠습니다.</div>
+    </div>
+  </div>
+</div>
+
+<p class="tiny">Touches 2 and 3 follow the same shape with a different reason and a harder call to action (16 more pieces in the full kit). Every piece names the sender, the practice, and an opt-out.</p>
+
+<div class="callout">
+  <b>Why “counts, not names” is not a marketing line.</b> You send from your own phone or PMS. We receive segment counts, then results — contacted, replied, booked, attended, production. No name, birth date or insurance ID ever enters an email, a spreadsheet or a chat with us.
+</div>
+
+<!-- ========================= PAGE 2 ========================= -->
+<div class="page-break"></div>
+
+<h2 style="margin-top:0">3. Tracker sheet (one row per send)</h2>
+<p>Shared as a Google Sheet or an Excel file. The practice fills in four columns; everything else is calculated.</p>
+<table>
+  <tr><th style="width:14mm">Date</th><th style="width:10mm">Group</th><th style="width:14mm">Touch</th><th class="num" style="width:16mm">Contacted</th><th class="num" style="width:14mm">Replied</th><th class="num" style="width:14mm">Booked</th><th class="num" style="width:14mm">Attended</th><th class="num" style="width:18mm">Production</th><th>Notes</th></tr>
+  <tr><td>Dec 2</td><td>A</td><td>1 · text</td><td class="num">186</td><td class="num">21</td><td class="num">12</td><td class="num">11</td><td class="num">$2,750</td><td>Tuesday slot filled first</td></tr>
+  <tr><td>Dec 4</td><td>B</td><td>1 · email</td><td class="num">214</td><td class="num">17</td><td class="num">9</td><td class="num">7</td><td class="num">$1,750</td><td>Insurance-reset angle worked</td></tr>
+  <tr><td>Dec 6</td><td>C</td><td>1 · letter</td><td class="num">140</td><td class="num">6</td><td class="num">3</td><td class="num">2</td><td class="num">$590</td><td>Two asked to close the chart</td></tr>
+  <tr><td>Dec 11</td><td>A</td><td>2 · email</td><td class="num">174</td><td class="num">14</td><td class="num">8</td><td class="num">7</td><td class="num">$1,750</td><td>“Last opening before the holiday”</td></tr>
+  <tr class="total"><td colspan="3">Running total</td><td class="num">714</td><td class="num">58</td><td class="num">32</td><td class="num">27</td><td class="num">$6,840</td><td>Example rows, fictional practice</td></tr>
+</table>
+
+<h2>4. The 21-day calendar</h2>
+<table>
+  <tr><th style="width:12mm">Day</th><th style="width:44mm">What goes out</th><th style="width:30mm">Channel</th><th style="width:26mm">Who sends</th><th>Check</th></tr>
+  <tr><td>0</td><td>3 segment counts from the PMS</td><td>Sheet, no names</td><td>Practice + us</td><td>Counts add up to the overdue list</td></tr>
+  <tr><td>1</td><td>Touch 1 to group A</td><td>Text / email</td><td>Front desk</td><td>Test message to your own phone first</td></tr>
+  <tr><td>3</td><td>Touch 1 to group B</td><td>Email + printed letter</td><td>Front desk</td><td>Letters signed by the doctor</td></tr>
+  <tr><td>5</td><td>Touch 1 to group C</td><td>Printed letter</td><td>Front desk</td><td>New-patient exam wording used</td></tr>
+  <tr><td>4–8</td><td>Calls to A and C non-responders</td><td>Phone script</td><td>Front desk</td><td>5 objections rehearsed once</td></tr>
+  <tr><td>11</td><td>Touch 2 to A and B</td><td>Email</td><td>Front desk</td><td>Specific opening, not “call us”</td></tr>
+  <tr><td>15</td><td>Touch 3 to all groups</td><td>Text / email / letter</td><td>Front desk</td><td>“Last one we’ll send” line included</td></tr>
+  <tr><td>21</td><td>Tracker closed, report written</td><td>1-page PDF</td><td>Us</td><td>Attended counted, not just booked</td></tr>
+</table>
+
+<h2>5. Closing report (day 21) — sample</h2>
+<div class="report-grid">
+  <div class="metric"><div class="k">Contacted</div><div class="v">540</div></div>
+  <div class="metric"><div class="k">Replied</div><div class="v">61</div></div>
+  <div class="metric"><div class="k">Booked</div><div class="v">34</div></div>
+  <div class="metric"><div class="k">Attended</div><div class="v">27</div></div>
+  <div class="metric"><div class="k">Production</div><div class="v">$6,750</div></div>
+</div>
+<p><b>What the numbers say (sample):</b> group A carried the response (11.3% booked); group C booked rarely but produced the highest value per visit. Calls converted 9 of the 34 bookings — the script did more work than the third touch.</p>
+<ul>
+  <li><b>Next month:</b> send group C a second letter with a different reason (medication and gum health), and call every B that replied but did not book.</li>
+  <li><b>Front desk:</b> keep the call window at 9:30–11:00am — afternoons went unanswered in this sample.</li>
+  <li><b>Care plan:</b> birthday message + insurance-max reminder, both already written.</li>
+</ul>
+
+<div class="callout good">
+  <b>The guarantee, as it appears in the sprint:</b> if the three planned sends are completed and fewer than 5 patients rebook, the next month of Recall Care is free. Patient numbers are never promised — the promise covers the work: segments, copy, calendar, tracker, three check-ins.
+</div>
+
+<div class="callout">
+  <b>Compliance note.</b> Messages go to existing patients only, through the practice’s own records and consent, and every piece includes an opt-out line. The practice keeps the patient list and the record of each send. If a practice asks us to send on its behalf, that requires a signed BAA and HIPAA-compliant tooling — a separate, quoted scope.
+</div>
+
+<p class="footer-note">Want this run on your own numbers? The free 1-page leak report takes three counts and 24 hours — <a href="https://nydds.github.io/recall-rescue/"><b>nydds.github.io/recall-rescue</b></a> · <a href="mailto:caremyshop.team@gmail.com">caremyshop.team@gmail.com</a> · Pricing: sprint $249 (regular $349), Recall Care $149/month (regular $199).</p>
+
+</body>
+</html>

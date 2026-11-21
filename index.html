@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recall Rescue — Bring back the patients you already have (Flushing &amp; Queens dental)</title>
+<meta name="description" content="A 3-week recall and no-show recovery campaign for dental practices in Flushing and Queens, NY. We write the segments, English/Korean copy, call scripts and tracker; your front desk spends 30 minutes a week. No patient lists leave your office. Free 1-page leak report.">
+<link rel="canonical" href="https://nydds.github.io/recall-rescue/">
+<link rel="alternate" hreflang="ko" href="https://nydds.github.io/recall-rescue/ko/">
+<meta property="og:title" content="Recall Rescue — Your empty chairs are already in your patient list">
+<meta property="og:description" content="3-week recall campaign for Flushing &amp; Queens dental practices. Free 1-page leak report in 24 hours. No PMS integration, no patient lists.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nydds.github.io/recall-rescue/">
+<meta name="theme-color" content="#12263f">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./">Recall <span class="mark">Rescue</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#calc">Leak calculator</a>
+      <a href="#offer">Pricing</a>
+      <a href="#sample">Sample pack</a>
+      <a href="#faq">FAQ</a>
+      <a href="#request">Free report</a>
+      <a class="lang" href="ko/" hreflang="ko" lang="ko">한국어</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">Flushing &amp; Queens dental · no PMS integration · no contract</span>
+    <h1>Your empty chairs are already in your patient list.</h1>
+    <p class="sub">We build and run a 3-week recall campaign for the patients you already have: three segments, English and Korean copy, a phone script, and a tracker. Your front desk spends about 30 minutes a week. No patient names ever leave your office.</p>
+    <div class="cta-row">
+      <a class="btn" href="#calc">Run my leak numbers</a>
+      <a class="btn ghost" href="#request">Get the free 1-page report</a>
+    </div>
+    <p class="fine">Report delivered within 24 hours · no signup · every figure on this page is sourced below.</p>
+  </div>
+</section>
+
+<section class="trust" aria-label="Industry benchmarks">
+  <div class="wrap">
+    <div><strong>40–55%</strong>Typical recall compliance in US practices. Half your active list is already overdue. <span class="fine">(Dentalbase, citing ADA benchmarks)</span></div>
+    <div><strong>$481</strong>Median production per visit for a general practitioner. <span class="fine">(ADA 2026 Survey of Dental Practice)</span></div>
+    <div><strong>65–80%</strong>Recall compliance when recall is actually worked, instead of left to a reminder nobody reads. <span class="fine">(Dentalbase)</span></div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <section id="calc" aria-labelledby="calc-h">
+      <h2 id="calc-h">What the leak looks like in your practice</h2>
+      <p class="lede">Five numbers, all from reports you already run. No patient names, no PMS login.</p>
+      <div class="calc">
+        <div class="calc-grid">
+          <div class="field">
+            <label for="calc-patients">Active patients</label>
+            <input id="calc-patients" type="number" inputmode="numeric" min="0" max="100000" step="50" value="1200">
+            <div class="hint">Seen in the last 18–24 months</div>
+          </div>
+          <div class="field">
+            <label for="calc-compliance">Recall compliance (%)</label>
+            <input id="calc-compliance" type="number" inputmode="decimal" min="0" max="100" step="1" value="55">
+            <div class="hint">Share of due patients who actually come back</div>
+          </div>
+          <div class="field">
+            <label for="calc-value">Average production per visit ($)</label>
+            <input id="calc-value" type="number" inputmode="decimal" min="1" max="100000" step="10" value="250">
+            <div class="hint">A hygiene/recall visit</div>
+          </div>
+          <div class="field">
+            <label for="calc-appts">Appointments per day</label>
+            <input id="calc-appts" type="number" inputmode="numeric" min="0" max="500" step="1" value="20">
+            <div class="hint">Booked chair slots</div>
+          </div>
+          <div class="field">
+            <label for="calc-noshow">No-show rate (%)</label>
+            <input id="calc-noshow" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="6.4">
+            <div class="hint">Planet DDS 2026 mid-year average: 6.4%</div>
+          </div>
+        </div>
+
+        <div class="calc-out" aria-live="polite">
+          <div class="result-hero">
+            <div class="stat">
+              <div class="k">Overdue patients</div>
+              <div class="v"><span id="out-overdue">540</span></div>
+              <div class="hint">out of <span id="out-of">1,200</span> active</div>
+            </div>
+            <div class="stat accent">
+              <div class="k">Leaking every month</div>
+              <div class="v" id="out-monthly">$28,900</div>
+              <div class="hint">recall gap + no-shows</div>
+            </div>
+          </div>
+
+          <div class="stat-rows">
+            <div>Annual leak: <b id="out-annual">$346,800</b></div>
+            <div>Recall gap alone: <b id="out-recall-annual">$270,000</b> / yr</div>
+            <div>No-shows: <b id="out-noshow-annual">$76,800</b> / yr</div>
+            <div>If just 10% come back: <b><span id="out-recover-count">54</span> patients</b> ≈ <b id="out-recover-money">$13,500</b></div>
+          </div>
+
+          <div class="leak-bar">
+            <div class="bar-track"><div class="bar-fill" id="bar-fill" style="width:96%"></div></div>
+            <div class="bar-labels"><span>Leak left after a conservative 10% win-back</span><span>recovered</span></div>
+          </div>
+
+          <div class="payback">
+            <strong>Break-even is one returning visit.</strong>
+            The 21-day sprint ($249) is paid for by <b><span id="out-sprint-visits">1</span></b> returning visit, and Recall Care ($149/month) is paid for by <b><span id="out-care-visits">1</span></b> visit a month — at your own average production per visit.
+          </div>
+          <p class="fine">Formula: overdue = active × (1 − compliance). Annual recall gap = overdue × 2 visits a year × production per visit. No-show loss = appointments/day × no-show rate × production × 240 working days. Win-back assumes a conservative 10% of overdue patients return once. Change any number to match your own reports.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-h">
+      <h2 id="how-h">How the 21 days go</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="n">1</span>
+          <h3>Day 0 — three counts, no names</h3>
+          <p>From your existing reports: how many patients are 6–12 months, 12–24 months, and 24+ months overdue. That is the whole intake. The list stays in your office.</p>
+        </div>
+        <div class="step">
+          <span class="n">2</span>
+          <h3>Week 1–3 — 18 pieces of copy, sent from your office</h3>
+          <p>Three touches per segment, written in English and Korean for text, email or print — plus a one-page phone script and answers to the five objections your front desk actually hears.</p>
+        </div>
+        <div class="step">
+          <span class="n">3</span>
+          <h3>Day 21 — a one-page result report</h3>
+          <p>Contacted, replied, booked, attended, production recovered — and what we would send next month. You own the numbers and the record.</p>
+        </div>
+      </div>
+      <div class="callout note">
+        <b>Why “your front desk spends 30 minutes.”</b> The campaign is built so the office only has to approve, send, and mark the tracker. If a practice can’t spare that, no campaign works — so we refuse to pretend otherwise.
+      </div>
+    </section>
+
+    <section id="offer" aria-labelledby="offer-h">
+      <h2 id="offer-h">Pricing</h2>
+      <p class="lede">Founding prices for the first three practices. After that, the regular price listed next to each tier.</p>
+      <div class="plans">
+        <article class="plan">
+          <span class="badge">Step 0 · Free</span>
+          <h3>Recall leak report</h3>
+          <div class="price">$0</div>
+          <p class="small">Delivered within 24 hours of your three counts.</p>
+          <ul>
+            <li>One page: overdue patient count</li>
+            <li>Recoverable production, with the formula shown</li>
+            <li>Three lines on where the money is going</li>
+          </ul>
+          <div class="plan-cta"><a class="btn secondary" href="#request">Request the free report</a></div>
+        </article>
+
+        <article class="plan featured">
+          <span class="badge">Step 1 · 21 days</span>
+          <h3>Reactivation sprint</h3>
+          <div class="price">$249<span class="strike">$349</span></div>
+          <p class="flag">Founding price — first 3 practices</p>
+          <ul>
+            <li>Segment design for 3 groups (6–12 / 12–24 / 24+ months)</li>
+            <li>3-touch sequence, 3 groups, English + Korean = 18 pieces of copy</li>
+            <li>Phone script + objection answers</li>
+            <li>21-day cadence calendar</li>
+            <li>Tracker sheet (contacted / replied / booked / attended / production)</li>
+            <li>Three 15-minute check-ins and a closing report</li>
+          </ul>
+          <div class="plan-cta"><a class="btn" href="#request">Start with the free report</a></div>
+        </article>
+
+        <article class="plan">
+          <span class="badge">Step 2 · Monthly</span>
+          <h3>Recall Care</h3>
+          <div class="price">$149<small>/mo</small><span class="strike">$199</span></div>
+          <p class="flag">Founding price — first 3 practices, first 3 months</p>
+          <ul>
+            <li>One new campaign a month: birthday, insurance-max season, unfinished treatment, 6-month recall</li>
+            <li>5-minute front-desk drill video + checklist</li>
+            <li>Monthly KPI review</li>
+            <li>Copy refresh so the message stops being invisible</li>
+          </ul>
+          <div class="plan-cta"><a class="btn secondary" href="#request">Ask about Care</a></div>
+        </article>
+      </div>
+
+      <div class="callout guarantee">
+        <h3>The guarantee, in full</h3>
+        <p>If we complete the three planned sends and <b>fewer than 5 patients rebook</b>, your next month of Recall Care is free. No one can promise patient numbers — the promise is tied to the part we control: the work is designed, written, and the tracker is reviewed with you three times.</p>
+        <p class="fine" style="margin-bottom:0">“Completed as planned” means the three sends went out to the three segments from your office, on the dates in the cadence calendar.</p>
+      </div>
+
+      <div class="callout note">
+        <b>Payment today:</b> invoice with <b>Zelle or check</b> — no card processing fee, nothing to sign up for. Card payment opens when our Stripe account does. No contract either way; you can stop the monthly care plan with one email.
+      </div>
+    </section>
+
+    <section id="phi" aria-labelledby="phi-h">
+      <h2 id="phi-h">Patient lists never leave your office</h2>
+      <div class="phi">
+        <ul>
+          <li><b>No names, no dates of birth, no insurance IDs.</b> Not in any tier, not for any price.</li>
+          <li><b>We work from counts:</b> “186 patients are 6–12 months overdue,” not a list.</li>
+          <li><b>Sending stays with you.</b> Your front desk sends from your phone, your PMS or your mail merge. You keep the record; we get numbers back.</li>
+          <li><b>If you ever want us to send on your behalf,</b> that needs a signed BAA and HIPAA-compliant tools. That is a separate, paid scope we quote first — we will not improvise it.</li>
+        </ul>
+      </div>
+      <p class="fine">Our intake asks for three counts and a contact name. If a form ever asks you for a patient name, it is not ours.</p>
+    </section>
+
+    <section id="sample" aria-labelledby="sample-h">
+      <h2 id="sample-h">See the work before you pay</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Sample sprint pack (2 pages, PDF)</h3>
+          <p>The three segments with example counts, six message samples in English and Korean, the tracker columns, and a sample closing report — built on a fictional practice, because a real one would contain patient data.</p>
+          <p><a class="btn secondary" href="assets/Recall-Rescue-Sample-Pack.pdf">Open the sample pack (PDF)</a></p>
+        </div>
+        <div class="card">
+          <h3>What is inside the real pack</h3>
+          <ul>
+            <li>18 pieces of copy (3 touches × 3 segments × English/Korean)</li>
+            <li>Phone script + five objection answers</li>
+            <li>21-day cadence calendar with who sends what, when</li>
+            <li>Tracker sheet and closing report template</li>
+          </ul>
+          <p class="fine">Text, email or printed letter — whatever your patients actually answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="request" aria-labelledby="request-h">
+      <h2 id="request-h">Free 1-page leak report</h2>
+      <p class="lede">Three numbers and a way to reach you. Within 24 hours you get the page, with every assumption written out. No call required, and no obligation after it.</p>
+      <form id="request-form" class="request" novalidate
+            data-email="caremyshop.team@gmail.com"
+            data-subject="Free recall leak report request"
+            data-intro="Hello Recall Rescue, I would like the free 1-page recall leak report."
+            data-l-practice="Practice"
+            data-l-patients="Active patients"
+            data-l-compliance="Recall compliance (%)"
+            data-l-contact="Contact"
+            data-l-note="Note">
+        <div class="form-grid">
+          <div class="field">
+            <label for="req-practice">Practice name</label>
+            <input id="req-practice" type="text" autocomplete="organization" placeholder="e.g. Northern Blvd Family Dental">
+          </div>
+          <div class="field">
+            <label for="req-patients">Active patients</label>
+            <input id="req-patients" type="number" inputmode="numeric" min="0" placeholder="1200">
+          </div>
+          <div class="field">
+            <label for="req-compliance">Recall compliance (%)</label>
+            <input id="req-compliance" type="number" inputmode="decimal" min="0" max="100" placeholder="55">
+          </div>
+          <div class="field">
+            <label for="req-contact">Name and email (or phone)</label>
+            <input id="req-contact" type="text" autocomplete="email" placeholder="Dr. Kim · frontdesk@practice.com">
+          </div>
+        </div>
+        <div class="field">
+          <label for="req-note">Anything else? (optional)</label>
+          <textarea id="req-note" placeholder="PMS you use, languages your patients read, the month you want to run this."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn" type="submit">Open email draft</button>
+          <button class="btn secondary" id="copy-button" type="button">Copy request</button>
+        </div>
+        <p class="form-note">Submitting opens your email app with the request filled in. In an in-app browser (Instagram, Facebook, WeChat) that may not open — press <b>Copy request</b> and send it to <a href="mailto:caremyshop.team@gmail.com">caremyshop.team@gmail.com</a>. Please do not include patient names in the message.</p>
+
+        <div class="submit-card" id="submit-card">
+          <p><b>Your request, ready to send:</b> copy this and email or text it to <a href="mailto:caremyshop.team@gmail.com">caremyshop.team@gmail.com</a>.</p>
+          <label for="copy-area" class="sr-only">Request text</label>
+          <textarea id="copy-area" readonly></textarea>
+          <p class="status" id="copy-status" data-opening="Opening your email app…" data-copied="Copied. Paste it into any email or text." data-manual="Press Ctrl/Cmd+C to copy."></p>
+        </div>
+      </form>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-h">
+      <h2 id="faq-h">Questions practices actually ask</h2>
+
+      <details class="faq" open>
+        <summary>We already have a recall system.</summary>
+        <p>Most practices do — and most of those systems send the same reminder that was written years ago, to everyone, without anyone opening the overdue list. We keep your system and work the list it produces: three groups, three different messages, 21 days of follow-through. If the system is fine and the copy is fine, you will not need us, and the free report will show that.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Do we have to hand over patient information?</summary>
+        <p>No. The office sends from its own phone, PMS or mail merge. We receive counts (how many were contacted, replied, booked, attended) and production totals — never a name, a birth date or an insurance ID.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What if it doesn’t work?</summary>
+        <p>If we completed the three planned sends and fewer than five patients rebooked, your next month of Recall Care is free. We will not promise a number of patients: it depends on your list, your front desk and your schedule. We will show you the counts at every step so you can decide to stop.</p>
+      </details>
+
+      <details class="faq">
+        <summary>What do you need from us?</summary>
+        <p>Three counts on day 0, about 30 minutes a week to approve and send, and the tracker numbers at the end of each week. No PMS integration, no install, no IT ticket.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Why English and Korean?</summary>
+        <p>In Flushing the same practice has patients who answer a Korean text and patients who ignore anything that is not English. We write both and your front desk picks per patient — it is the cheapest response-rate improvement available.</p>
+      </details>
+
+      <details class="faq">
+        <summary>How do we pay, and is there a contract?</summary>
+        <p>Invoice with Zelle or check. Card payment when our Stripe account opens. No contract: the sprint is a fixed $249, and the monthly care plan can be stopped with one email.</p>
+      </details>
+
+      <details class="faq">
+        <summary>Who is behind this?</summary>
+        <p>A dental operations consultant based in Flushing, Queens, working only on recall and no-show recovery — not websites, not marketing retainers. We are independent: not affiliated with any PMS vendor, and not connected to any practice we might be compared with.</p>
+      </details>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-h">
+      <h2 id="sources-h">Where the numbers come from</h2>
+      <ul class="fine">
+        <li>Recall compliance 40–55% typical, 65–80% when recall is actively worked — Dentalbase, citing ADA benchmarks (dentalbase.ai, “Dental recall gap”).</li>
+        <li>Median production per visit $481, general practitioners — ADA 2026 Survey of Dental Practice (2025 data), as reported by Dentx.</li>
+        <li>No-show 6.4% and same-day cancellation 13.7%, 2026 mid-year, 5,200 practices — Planet DDS data, as reported by AInora.</li>
+        <li>These are averages from other practices. Your report uses your own numbers and shows every assumption.</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="#calc">Leak calculator</a>
+      <a href="#offer">Pricing</a>
+      <a href="#sample">Sample pack</a>
+      <a href="#request">Free report</a>
+      <a href="ko/">한국어 페이지</a>
+    </nav>
+    <p><strong>Recall Rescue</strong> — recall and no-show recovery for dental practices in Flushing and Queens, NY.<br>
+    Email: <a href="mailto:caremyshop.team@gmail.com">caremyshop.team@gmail.com</a></p>
+    <p class="fine">We do not guarantee patient numbers. Figures on this page are public industry benchmarks, not a promise for your practice. No patient information is collected through this site; the form only prepares a message in your own email app. © 2026 Recall Rescue.</p>
+  </div>
+</footer>
+
+<script src="assets/leak-calc.js" defer></script>
+<script src="assets/request-form.js" defer></script>
+</body>
+</html>

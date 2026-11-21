@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nydds.github.io/recall-rescue/sitemap.xml
