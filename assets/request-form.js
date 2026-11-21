@@ -86,6 +86,9 @@
     if (copyBtn) {
       copyBtn.addEventListener("click", function () {
         if (!copyArea.value) copyArea.value = build();
+        // The button also works before submitting, so make the box visible first.
+        card.classList.add("show");
+        card.scrollIntoView({ block: "nearest" });
         copyText(copyArea.value).then(function () {
           if (status) status.textContent = status.getAttribute("data-copied") || "Copied.";
         }).catch(function () {
