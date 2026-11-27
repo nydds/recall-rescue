@@ -30,12 +30,16 @@ Live:
 
 Guarantee: if the three planned sends are completed and fewer than 5 patients rebook, the next month of Recall Care is free.
 
-Payment today: invoice + Zelle or check. Card links are added when a Stripe account exists.
+## Brand and payment (set 2026-11-26)
+
+- **Operator name: `Recall Rescue Team`.** The site copy, the FAQ (“Who is behind this?”), the footer and outreach signatures use the team name only. No personal name appears on the site, in an email signature or on an invoice.
+- **Payment: PayPal.** A PayPal invoice (card or PayPal balance), or the link `https://paypal.me/nydds`. For practices that would rather not use PayPal, **Zelle** is listed on the invoice — 0% fee, details sent with the invoice rather than published on the site.
+- Prices are unchanged: $249 founding sprint (regular $349), $149/mo founding care (regular $199). No Stripe dependency any more.
 
 ## Rules this site keeps
 
+- **No personal contact details.** Only the business inbox (`caremyshop.team@gmail.com`) and the team name (`Recall Rescue Team`) appear on the site — no personal name, no personal phone number, no home address.
 - **No PHI.** Intake asks for counts and a contact, never a patient name, birth date or insurance ID. Sending happens in the practice's own systems. Any "send on our behalf" work needs a signed BAA and is quoted separately.
-- **No personal contact details.** Only the business inbox (`caremyshop.team@gmail.com`) appears on the site — no personal phone number, no home address.
 - **No promised patient numbers.** Every figure is a cited public benchmark or comes from the visitor's own inputs, with the formula printed under the calculator.
 
 ## Calculator formula
